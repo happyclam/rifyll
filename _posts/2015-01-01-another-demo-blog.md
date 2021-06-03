@@ -1,5 +1,6 @@
 ---
 layout: post
+category: cooking
 tags: machine-learning python numpy scikit-learn
 date: 2015-01-01 13:08
 thumbnail: http://placehold.it/100x100

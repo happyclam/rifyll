@@ -1,0 +1,31 @@
+---
+layout: default
+title: Tags
+---
+<div class="container">
+  <div class="row">
+    <div class=" col-lg-offset-3 col-lg-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <img class="img-circle img-responsive" 
+                    src="{{site.data.personal.gravatar}}">
+                </div>
+              </div>
+            </div>
+          </div>
+          {% for tag in site.tags %} 
+          <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+          <ul>
+            {% assign pages_list = tag[1] %}  
+            {% include pages_list %}
+          </ul>
+          {% endfor %}
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
